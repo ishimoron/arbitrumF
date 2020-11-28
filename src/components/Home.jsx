@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import axios from 'axios';
 import './Home.css';
-
+import logoSrc from '../assets/img/Logo.png';
+import SearchIcon from '@material-ui/icons/Search';
+import HelpIcon from '@material-ui/icons/Help';
 const Home = () => {
 	const [state, setState] = useState({
 		search: '',
@@ -12,23 +14,37 @@ const Home = () => {
 	};
 
 	const handleSubmit = (e) => {
-		e.preventDefault();
-
-		axios.post('', {state})
+		alert('Good');
 	};
 	console.log(state.search);
 	return (
 		<div className="home__container">
-			<div className="home__title">
-				<p>Arbitrum</p>
+			<span className="home__header" />
+			<div className="home__wrapper">
+				<div className="logo">
+					<img src={logoSrc} alt=""></img>
+				</div>
+				<span className="header__text">Арбитрум — это место решения конфликтов между бизнесом и клиентам.</span>
+				<div className="search__wrapper">
+					<form onSubmit={handleSubmit} className="search__form">
+						<input
+							type="text"
+							className="search__input"
+							onChange={handleChange}
+							placeholder="Введите номер или имя"
+						/>
+						<button type="submit" className="search__btn">
+							<SearchIcon />
+						</button>
+					</form>
+				</div>
+				<div className="footer">
+					<div className="footer__links">
+						<a href="/">Список самых вредных редисок</a>
+						<a href="/">Про проект <HelpIcon /></a>
+					</div>
+				</div>
 			</div>
-			<div className="App">
-				<form onSubmit={handleSubmit}>
-					<input type="text" onChange={handleChange} />
-                    <button type="submit">search!</button>
-				</form>
-			</div>
-			<pre>{state.search}</pre>
 		</div>
 	);
 };
