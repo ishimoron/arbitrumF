@@ -4,6 +4,7 @@ import './Home.css';
 import logoSrc from '../assets/img/Logo.png';
 import SearchIcon from '@material-ui/icons/Search';
 import HelpIcon from '@material-ui/icons/Help';
+import { Link, Redirect } from 'react-router-dom';
 const Home = () => {
 	const [state, setState] = useState({
 		search: '',
@@ -14,9 +15,13 @@ const Home = () => {
 	};
 
 	const handleSubmit = (e) => {
-		alert('Good');
+		<Link to="/search"></Link>
 	};
 	console.log(state.search);
+
+	// const Input = styled.input`
+
+	// `
 	return (
 		<div className="home__container">
 			<span className="home__header" />
@@ -26,7 +31,7 @@ const Home = () => {
 				</div>
 				<span className="header__text">Арбитрум — это место решения конфликтов между бизнесом и клиентам.</span>
 				<div className="search__wrapper">
-					<form onSubmit={handleSubmit} className="search__form">
+					<form onSubmit={handleSubmit} className="search__form" action="/search">
 						<input
 							type="text"
 							className="search__input"

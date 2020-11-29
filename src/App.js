@@ -5,6 +5,7 @@ import Search from './components/Search';
 import Registration from './components/Registration';
 import MainDrawer from './components/MainDrawer';
 import Authorization from './components/Authorization';
+import UserInfo from './components/UserInfo'
 
 const App = () => {
 	return (
@@ -14,7 +15,8 @@ const App = () => {
 			</div>
 			<Switch>
 				<Route exact path="/" component={Home} />
-				<Route path="/search" component={Search} />
+				<Route exact path="/search" component={Search} />
+				<Route path="/search/:id" component={UserInfo} />
 				<Route path="/registration" component={Registration} />
 				<Route path="/authorization" component={Authorization} />
 			</Switch>

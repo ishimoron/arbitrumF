@@ -1,0 +1,136 @@
+.search__container {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	background-color: #5f9b59;
+}
+
+.search__header {
+	height: 60px;
+	background-color: #d3d4db;
+	width: 100%;
+	position: relative;
+}
+.logo__header > img {
+	width: 175px;
+	height: 60px;
+}
+.logo__header {
+	margin-left: 15%;
+	margin-top: 10px;
+}
+
+::placeholder {
+	line-height: 20;
+	font-size: 16px;
+	color: #000;
+	padding-left: 50px;
+}
+
+.search__box > input {
+	width: 780px;
+	height: 60px;
+	background-color: #fff;
+	border: none;
+}
+
+.search__box {
+	position: absolute;
+	top: 0;
+	left: 40%;
+	width: 780px;
+	border-bottom: none;
+}
+.search__box-Sicon {
+	position: absolute;
+	top: 17px;
+	right: 10px;
+	cursor: pointer;
+}
+.search__box-Cicon {
+	position: absolute;
+	top: 17px;
+	left: 15px;
+	cursor: pointer;
+}
+.search-wrapper {
+}
+.search__text {
+	position: absolute;
+	top: 105px;
+	left: 180px;
+	color: #fff;
+	font-size: 35px;
+	line-height: 40px;
+}
+.search__card {
+	position: absolute;
+	left: 180px;
+	top: 160px;
+	width: 480px;
+	height: 240px;
+	background-color: #e1ed70;
+    border-radius: 10px;
+    cursor: pointer
+}
+.search__card-2 {
+	position: absolute;
+	right: 250px;
+	top: 160px;
+	width: 480px;
+	height: 240px;
+	background-color: #e1ed70;
+    border-radius: 10px;
+    cursor: pointer
+}
+.card__title {
+	font-family: HelveticaNeue;
+	font-size: 35px;
+	line-height: 40px;
+	color: #000;
+	position: absolute;
+	top: 26px;
+	left: 60px;
+}
+.card__subtitle {
+	font-family: HelveticaNeue;
+	font-size: 20px;
+	line-height: 40px;
+    color: #000;
+    position: absolute;
+    top:72px;
+    left: 60px;
+}
+
+.card__situation {
+	font-family: HelveticaNeue;
+	font-size: 16px;
+	line-height: 30px;
+    color: #000;
+    position: absolute;
+    top:157px;
+    left: 60px;
+}
+
+.card__decision {
+	font-family: HelveticaNeue;
+	font-size: 16px;
+	line-height: 30px;
+    color: #000;
+    position: absolute;
+    top:157px;
+    right: 160px;
+}
+
+.footer{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	position: absolute;
+	bottom: 50px;
+}
+.footer__links > a{
+	color: #E1ED70;
+	margin-right: 142px;
+}

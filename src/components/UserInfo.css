@@ -1,0 +1,75 @@
+.user__container {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	/* background-color: #5f9b59; */
+	position: relative;
+}
+
+.user__header {
+	height: 60px;
+	background-color: #d3d4db;
+    width: 100%;
+    position: absolute;
+}
+
+.user__wrapper {
+	height: 100vh;
+}
+.user__sidebar {
+    /* flex: 0.5; */
+    background-color: #5f9b59;
+    width: 480px;
+height: 900px;
+}
+.sidebar__text {
+	position: absolute;
+	top: 110px;
+	left: 180px;
+}
+.sidebar__title {
+	font-family: HelveticaNeue;
+	font-size: 35px;
+	line-height: 40px;
+	color: #fff;
+}
+.sidebar__subtitle {
+	font-size: 20px;
+	line-height: 40px;
+	color: #ffffff;
+	/* margin-top: 10px; */
+}
+.sidebar__situation {
+	font-family: HelveticaNeue;
+	font-size: 16px;
+	line-height: 30px;
+	color: #fff;
+	margin-top: 45px;
+}
+.sidebar__decision {
+	font-family: HelveticaNeue;
+	font-size: 16px;
+	line-height: 30px;
+    color: #ffffff;
+	margin-top: -29px;
+    margin-left: 130px;
+}
+
+.user__card{
+    width: 850px;
+    height: 420px;
+    background-color: #fff;
+    position: absolute;
+    right: 53px;
+    top: 80px;
+    border-radius: 15px;
+}
+.user__content{
+    background: #fff;
+    width: 50%;
+}
+.user__card-section{
+    position: absolute;
+    top: 540px;
+    right: 53px;
+}
